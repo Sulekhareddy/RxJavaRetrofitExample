@@ -9,6 +9,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [HOCKEYAPP_APP_ID: "70608fad3fe54663af178733a047562c"]
     }
     buildTypes {
         release {
@@ -35,5 +36,8 @@ dependencies {
     implementation "com.squareup.okhttp3:okhttp:3.10.0"
     implementation "com.squareup.okhttp3:okhttp-urlconnection:3.0.1"
     implementation "com.squareup.okhttp3:logging-interceptor:3.9.1"
+
+    //HockeyApp
+    implementation 'net.hockeyapp.android:HockeySDK:5.1.0'
 
 }
